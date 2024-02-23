@@ -1,6 +1,8 @@
 import styled from 'styled-components';
-
-export const CarouselContainer = styled.ul`
+type CarouselContainerProps = {
+  ref?: any;
+};
+export const CarouselContainer = styled.ul<CarouselContainerProps>`
   max-width: 1040px;
   background: #0f1624;
   padding: 0rem;
@@ -31,14 +33,20 @@ export const CarouselContainer = styled.ul`
     margin-bottom: 8px;
   }
 `;
-export const CarouselMobileScrollNode = styled.div`
+type CarouselMobileScrollNodeProps = {
+  final?: boolean;
+};
+export const CarouselMobileScrollNode = styled.div<CarouselMobileScrollNodeProps>`
   @media ${(props) => props.theme.breakpoints.sm} {
     display: flex;
     min-width: ${({ final }) => (final ? `120%;` : `min-content`)};
   }
 `;
-
-export const CarouselItem = styled.div`
+type CarouselItemProps = {
+  index?: number;
+  active?: number;
+};
+export const CarouselItem = styled.div<CarouselItemProps>`
   background: #0f1624;
   border-radius: 3px;
   max-width: 196px;
@@ -138,7 +146,7 @@ export const CarouselButtons = styled.div`
   }
 `;
 
-export const CarouselButton = styled.button`
+export const CarouselButton = styled.button<CarouselItemProps>`
   box-sizing: border-box;
   background: none;
   padding: 4px;
@@ -154,7 +162,7 @@ export const CarouselButton = styled.button`
   }
 `;
 
-export const CarouselButtonDot = styled.div`
+export const CarouselButtonDot = styled.div<CarouselItemProps>`
   background-color: white;
   border-radius: 10px;
   margin: auto;

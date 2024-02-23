@@ -1,57 +1,66 @@
 export const projects = [
   {
-    title: 'MERN Memories',
+    title: 'SKEF Schools',
     description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    image: '/images/1.png',
-    tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+      'Using LitElement, Node.js, Express & MongoDB to build a Full Stack MERN Application - from start to finish. The App is an apllication for managing the school persona which includes Student/parent, Staff(Teachers) and admin, ',
+    image: '/images/skef.png',
+    tags: ['Mongo', 'Express', 'LitElement', 'Node', 'Typescript'],
+    source: 'https://github.com/Psalmseen/skefschool-frontend',
+    visit: 'https://skefschool.netlify.app/',
     id: 0,
   },
   {
-    title: 'E-Commerce',
+    title: 'Google Meet clone',
     description:
-      "While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
-    image: '/images/2.png',
-    tags: ['React', 'JavaScript'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+      'This application makes use of Next.js and the WebRTC technology to create a clone of the google meet application.',
+    image: '/images/google-meet.png',
+    tags: ['Next', 'JavaScript', 'WebRTC'],
+    source: 'https://github.com/Psalmseen/google-meet-clone',
+    visit: 'https://psalmseen-google-meet-clone.netlify.app/',
     id: 1,
   },
   {
-    title: 'WebRTC App',
+    title: 'Travel Advisior',
     description:
-      "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-    image: '/images/3.jpg',
-    tags: ['React', 'WebRTC'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+      'Travel Advisor is an application built for tourist to be able to explore resturants, hotels and attractions sites within their vicinity, it gives a  overview of the rating reviews and prices of this features.',
+    image: '/images/travel-advisor.png',
+    tags: ['React', 'Google map api', 'Material UI'],
+    source: 'https://github.com/Psalmseen/travel-advisor',
+    visit: 'https://psalmseen-travel-advisor.netlify.app',
     id: 2,
   },
   {
-    title: 'Unichat',
+    title: 'Seenergy Movies',
     description:
-      'This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application',
-    image: '/images/4.jpg',
-    tags: ['React', 'ChatEngine', 'Firebase'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+      'This is an application that gives an overview on new trending movies and review for your relaxation and entertainment.',
+    image: '/images/seenergy-movies.png',
+    tags: ['React', 'SCSS', 'Firebase', 'Redux'],
+    source: 'https://github.com/Psalmseen/Movie-app',
+    visit: 'https://seenergy-movies.netlify.app',
     id: 3,
   },
 ];
 
 export const TimeLineData = [
-  { year: 2017, text: 'Started my journey' },
-  { year: 2018, text: 'Worked as a freelance developer' },
-  { year: 2019, text: 'Founded JavaScript Mastery' },
-  { year: 2020, text: 'Shared my projects with the world' },
-  { year: 2021, text: 'Started my own platform' },
+  { year: 2019, text: 'Started my journey' },
+  {
+    year: 2020,
+    text: 'Took some courses on Javascript & react  and got my first internship.',
+  },
+  { year: 2021, text: 'Got my first job as a junior react developer.' },
+  {
+    year: 2022,
+    text: 'Delved into Backend and explored tools like Nodejs and mongoDB',
+  },
+  {
+    year: 2023,
+    text: 'Improved on my skills, witing better quality and clean code with proper documentation and testing.',
+  },
 ];
 
 export const AccomplishmentData = [
-  { number: 20, text: 'Open Source Projects' },
-  { number: 1000, text: 'Students' },
-  { number: 1900, text: 'GitHub Followers' },
-  { number: 5000, text: 'Github Stars' },
+  { number: 10, text: 'Personal Projects' },
+  { number: 5, text: 'Courses completed' },
+  { number: 5, text: 'JavaScript/Typescript Libraries and Framework' },
+  { number: 3, text: 'Years of professional working experience' },
 ];

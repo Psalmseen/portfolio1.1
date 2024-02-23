@@ -1,5 +1,9 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import {
+  AiFillGithub,
+  AiFillLinkedin,
+  AiOutlineWhatsApp,
+} from 'react-icons/ai';
 import {
   LinkColumn,
   LinkItem,
@@ -35,11 +39,11 @@ const Footer = () => {
           <SocialIcons href="https://github.com/psalmseen">
             <AiFillGithub size={'3rem'} />
           </SocialIcons>
-          <SocialIcons href="https://linkedin.com">
+          <SocialIcons href="https://www.linkedin.com/in/samson-oyebamiji-aa43b71b0/">
             <AiFillLinkedin size={'3rem'} />
           </SocialIcons>
-          <SocialIcons href="https://instagram.com">
-            <AiFillInstagram size={'3rem'} />
+          <SocialIcons href="https://wa.link/q9ol07">
+            <AiOutlineWhatsApp size={'3rem'} />
           </SocialIcons>
         </SocialContainer>
       </SocialIconsContainer>

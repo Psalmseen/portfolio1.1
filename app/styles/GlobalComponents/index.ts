@@ -1,6 +1,16 @@
 import styled from 'styled-components';
 
-export const Section = styled.section`
+type SectionProps = {
+  grid?: boolean;
+  row?: boolean;
+  nopadding?: boolean;
+};
+
+type SectionTitleProp = {
+  main?: boolean;
+  center?: boolean;
+};
+export const Section = styled.section<SectionProps>`
   display: ${(props: any) => (props.grid ? 'grid' : 'flex')};
   flex-direction: ${(props: any) => (props.row ? 'row' : 'column')};
   padding: ${(props: any) => (props.nopadding ? '0' : '32px 48px 0')};
@@ -24,7 +34,7 @@ export const Section = styled.section`
   }
 `;
 
-export const SectionTitle = styled.h2`
+export const SectionTitle = styled.h2<SectionTitleProp>`
   font-weight: 800;
   font-size: ${(props: any) => (props.main ? '65px' : '56px')};
   line-height: ${(props: any) => (props.main ? '72px' : '56px')};
@@ -170,8 +180,12 @@ export const SecondaryBtn = styled.button`
     line-height: 16px;
   }
 `;
-
-export const ButtonBack = styled.div`
+type ButtonProps = {
+  alt?: boolean;
+  form?: any;
+  disabled?: boolean;
+};
+export const ButtonBack = styled.div<ButtonProps>`
   width: ${({ alt }: any) => (alt ? '150px' : '262px')};
   height: ${({ alt }: any) => (alt ? '52px' : '64px')};
   border-radius: 50px;
@@ -207,7 +221,7 @@ export const ButtonBack = styled.div`
   }
 `;
 
-export const ButtonFront = styled.button`
+export const ButtonFront = styled.button<ButtonProps>`
   border: none;
   border-radius: 50px;
   color: #fff;

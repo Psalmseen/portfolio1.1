@@ -16,13 +16,13 @@ const Hero = () => (
         My personal Portfolio
       </SectionTitle>
       <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established
-        developers to take their development skils to the next level and build
-        awesome app
+        I'm a hard working and self motivated frontend developer, with an eye
+        for elegant application, and experience in building and maintaining
+        responsive and progressive websites and application.
       </SectionText>
       <Button
         onClick={() => {
-          window.location = 'https://google.com';
+          window.open('https:github.com/psalmseen', '_blank');
         }}
       >
         {' '}
