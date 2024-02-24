@@ -22,7 +22,7 @@ export const projects = [
   {
     title: 'Travel Advisior',
     description:
-      'Travel Advisor is an application built for tourist to be able to explore resturants, hotels and attractions sites within their vicinity, it gives a  overview of the rating reviews and prices of this features.',
+      'Travel Advisor is an application built for tourist to be able to explore resturants, hotels and attractions sites within their vicinity, it gives an overview of the rating reviews and prices of this features.',
     image: '/images/travel-advisor.png',
     tags: ['React', 'Google map api', 'Material UI'],
     source: 'https://github.com/Psalmseen/travel-advisor',
