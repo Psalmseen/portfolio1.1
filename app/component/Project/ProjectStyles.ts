@@ -101,8 +101,10 @@ export const ExternalLinks = styled.a`
 
 export const TagList = styled.ul`
   display: flex;
-  justify-content: space-around;
-  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2rem 0.5rem;
+  gap: 1rem;
 `;
 export const Tag = styled.li`
   color: #d8bfbf;
