@@ -1,22 +1,22 @@
-import React from 'react';
+import React from "react";
 
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiFirebase, DiGit, DiReact, DiZend } from "react-icons/di";
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
-} from '@/app/styles/GlobalComponents';
+} from "@/app/styles/GlobalComponents";
 import {
   List,
   ListContainer,
   ListItem,
   ListParagraph,
   ListTitle,
-} from './TechnologiesStyles';
+} from "./TechnologiesStyles";
 
 const Technologies = () => (
-  <Section id="tech">
+  <Section id='tech'>
     <SectionDivider />
     <SectionTitle main>Technologies</SectionTitle>
     <SectionText>
@@ -25,29 +25,40 @@ const Technologies = () => (
     </SectionText>
     <List>
       <ListItem>
-        <DiReact size={'3rem'} />
+        <DiReact size={"3rem"} />
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experience with <br /> React.js, LitElement
+            Experience with <br /> Typescript, React.js, Redux, Mobx,LitElement,
+            Next.js
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiFirebase size={'3rem'} />
+        <DiFirebase size={"3rem"} />
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Experience with <br /> Node.js and Databases
+            Experience with <br /> Node.js and Databases(Mongodb, Postgres)
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
-        <DiZend size={'3rem'} />
+        <DiZend size={"3rem"} />
         <ListContainer>
           <ListTitle>UI/UX</ListTitle>
           <ListParagraph>
             Experieence with <br /> tools like figma and Zeplin
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      <ListItem>
+        <DiGit size={"3rem"} />
+        <ListContainer>
+          <ListTitle>Version control / Automation</ListTitle>
+          <ListParagraph>
+            Experieence with <br /> tools like Github action, Ansible,
+            Terraform, Docker.
           </ListParagraph>
         </ListContainer>
       </ListItem>

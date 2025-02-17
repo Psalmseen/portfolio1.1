@@ -1,12 +1,12 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useRef, useState, useEffect } from "react";
 import {
   Section,
   SectionDivider,
   SectionText,
   SectionTitle,
-} from '@/app/styles/GlobalComponents';
+} from "@/app/styles/GlobalComponents";
 
-import { TimeLineData } from '../../constants/constants';
+import { TimeLineData } from "../../constants/constants";
 
 import {
   CarouselButton,
@@ -18,15 +18,15 @@ import {
   CarouselItemText,
   CarouselItemTitle,
   CarouselMobileScrollNode,
-} from './TimeLineStyles';
-import { TbUvIndex } from 'react-icons/tb';
+} from "./TimeLineStyles";
+import { TbUvIndex } from "react-icons/tb";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 const TimeLine = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
   const scroll = (node: HTMLElement, left: number) => {
-    return node.scrollTo({ left, behavior: 'smooth' });
+    return node.scrollTo({ left, behavior: "smooth" });
   };
   const handleClick = (e: any, i: number) => {
     e.preventDefault();
@@ -58,16 +58,16 @@ const TimeLine = () => {
       scroll(carouselRef.current!, 0);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
   }, []);
 
   return (
-    <Section id="about">
+    <Section id='about'>
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        I'm a Self motivated and middle level frontend developer with 3+ years
-        professional working experience using various Frontend and Backend
-        frameworks.
+        I am a highly motivated mid-level frontend developer with over three
+        years of professional experience, proficient in a variety of Frontend
+        and Backend Frameworks.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
@@ -85,33 +85,33 @@ const TimeLine = () => {
                 <CarouselItemTitle>
                   {item.year}
                   <CarouselItemImg
-                    width="208"
-                    height="6"
-                    viewBox="0 0 208 6"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
+                    width='208'
+                    height='6'
+                    viewBox='0 0 208 6'
+                    fill='none'
+                    xmlns='http://www.w3.org/2000/svg'
                   >
                     <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M2.5 5.5C3.88071 5.5 5 4.38071 5 3V3.5L208 3.50002V2.50002L5 2.5V3C5 1.61929 3.88071 0.5 2.5 0.5C1.11929 0.5 0 1.61929 0 3C0 4.38071 1.11929 5.5 2.5 5.5Z"
-                      fill="url(#paint0_linear)"
-                      fill-opacity="0.33"
+                      fill-rule='evenodd'
+                      clip-rule='evenodd'
+                      d='M2.5 5.5C3.88071 5.5 5 4.38071 5 3V3.5L208 3.50002V2.50002L5 2.5V3C5 1.61929 3.88071 0.5 2.5 0.5C1.11929 0.5 0 1.61929 0 3C0 4.38071 1.11929 5.5 2.5 5.5Z'
+                      fill='url(#paint0_linear)'
+                      fill-opacity='0.33'
                     />
                     <defs>
                       <linearGradient
-                        id="paint0_linear"
-                        x1="-4.30412e-10"
-                        y1="0.5"
-                        x2="208"
-                        y2="0.500295"
-                        gradientUnits="userSpaceOnUse"
+                        id='paint0_linear'
+                        x1='-4.30412e-10'
+                        y1='0.5'
+                        x2='208'
+                        y2='0.500295'
+                        gradientUnits='userSpaceOnUse'
                       >
-                        <stop stop-color="white" />
+                        <stop stop-color='white' />
                         <stop
-                          offset="0.79478"
-                          stop-color="white"
-                          stop-opacity="0"
+                          offset='0.79478'
+                          stop-color='white'
+                          stop-opacity='0'
                         />
                       </linearGradient>
                     </defs>
@@ -130,7 +130,7 @@ const TimeLine = () => {
             index={index}
             active={activeItem}
             onClick={(e) => handleClick(e, index)}
-            type="button"
+            type='button'
           >
             <CarouselButtonDot active={activeItem} />
           </CarouselButton>

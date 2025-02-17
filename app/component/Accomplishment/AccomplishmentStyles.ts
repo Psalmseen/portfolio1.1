@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Boxes = styled.div`
   width: 100%;
@@ -25,7 +25,7 @@ export const Boxes = styled.div`
 export const Box = styled.div`
   background: #212d45;
   border-radius: 12px;
-  height: 144px;
+  min-height: 144px;
   padding: 24px;
   @media ${(props) => props.theme.breakpoints.lg} {
     height: 210px;
